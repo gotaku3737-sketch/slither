@@ -22,6 +22,7 @@ from .variables.unused_state_variables import UnusedStateVars
 from .variables.could_be_constant import CouldBeConstant
 from .variables.could_be_immutable import CouldBeImmutable
 from .statements.tx_origin import TxOrigin
+from .statements.tx_origin_in_loop import TxOriginInLoop
 from .statements.assembly import Assembly
 from .operations.low_level_calls import LowLevelCalls
 from .operations.unused_return_values import UnusedReturnValues
@@ -38,9 +39,11 @@ from .shadowing.builtin_symbols import BuiltinSymbolShadowing
 from .operations.block_timestamp import Timestamp
 from .statements.calls_in_loop import MultipleCallsInLoop
 from .statements.incorrect_strict_equality import IncorrectStrictEquality
+from .statements.strict_balance_equality import StrictBalanceEquality
 from .erc.erc20.incorrect_erc20_interface import IncorrectERC20InterfaceDetection
 from .erc.incorrect_erc721_interface import IncorrectERC721InterfaceDetection
 from .erc.unindexed_event_parameters import UnindexedERC20EventParameters
+from .erc.unprotected_mint import UnprotectedMint
 from .statements.deprecated_calls import DeprecatedStandards
 from .source.rtlo import RightToLeftOverride
 from .statements.too_many_digits import TooManyDigits
